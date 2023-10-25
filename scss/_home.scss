@@ -1,0 +1,193 @@
+@use "colors";
+
+#scroll-area {
+  #home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+    height: 100vh;
+    width: 100%;
+    & #image-layout {
+      margin-top: 10%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30%;
+      width: 60%;
+      & #overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 96;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 20px solid $warning-yellow;
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+      }
+      & #person-png {
+        z-index: 97;
+        height: 95%;
+        width: 95%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+    & #person-name {
+      font-size: 30px;
+    }
+    & .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper .static-txt {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .wrapper .dynamic-txts {
+      margin-left: 5px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+    }
+    .dynamic-txts li {
+      list-style: none;
+      color: $warning-yellow;
+      font-size: 20px;
+      font-weight: 500;
+      position: relative;
+      top: 0;
+      animation: slide 15s steps(3) infinite;
+      -webkit-animation: slide 15s steps(3) infinite;
+    }
+
+    .dynamic-txts li span {
+      color: $danger-red;
+      position: relative;
+      margin: 5px 0;
+      line-height: 30px;
+    }
+    .dynamic-txts li span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: $bg-color;
+      border-left: 2px solid $warning-yellow;
+      animation: typing 5s steps(20) infinite,
+      blink step-start 0.5s infinite alternate;
+      -webkit-animation: typing 5s steps(20) infinite,
+      blink step-start 0.5s infinite alternate;
+    }
+
+    & #hire-btn {
+      padding: 2% 5%;
+      border: none;
+      border-radius: 50px;
+      background-color: $danger-red;
+      text-transform: capitalize;
+      font-size: 20px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+    }
+    & #hire-btn:hover {
+      animation: heart-animation 1s ease-in-out;
+      -webkit-animation: heart-animation 1s ease-in-out;
+    }
+    & #social-links {
+      font-size: 20px;
+      display: flex;
+      gap: 10%;
+      & .links {
+        text-decoration: none;
+      }
+      & :hover {
+        color: $warning-yellow;
+        @include ease-transition();
+      }
+    }
+    & #scroll-animation {
+      cursor: pointer;
+      position: relative;
+      padding: 1% 2%;
+      height: 4%;
+      width: 4%;
+      border: 2px solid $white-color;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      
+      & i {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-size: 5px;
+        left: 50%;
+        top: 30%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        animation: scroll-animation 1s ease-in-out infinite;
+        -webkit-animation: scroll-animation 1s ease-in-out infinite;
+      }
+    }
+
+    @keyframes scroll-animation {
+      0% {
+        top: 30%;
+      }
+      30% {
+        top: 70%;
+      }
+      100% {
+        top: 30%;
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-left: transparent;
+      }
+    }
+    
+    @keyframes typing {
+      40%,
+      60% {
+        left: calc(100% + 4px);
+      }
+      100% {
+        left: 0;
+      }
+    }
+    @keyframes slide {
+      100% {
+        top: -90px;
+      }
+    }
+    @keyframes heart-animation {
+      0% {
+        scale: 1;
+      }
+      50% {
+        scale: 0.9;
+      }
+      100% {
+        scale: 1;
+      }
+    }
+  }
+}

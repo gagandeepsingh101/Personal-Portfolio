@@ -1,0 +1,54 @@
+@import "home";
+@media only screen and (min-width: 768px) {
+  #scroll-area {
+    #home {
+      gap: 4%;
+      & #image-layout {
+        height: 30%;
+        width: 35%;
+      }
+      & #scroll-animation{
+        margin-top:5%;
+        padding: 4% 2%;
+        width: 2%;
+        height: 4%;
+        & i{
+          font-size: 5px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #scroll-area {
+    #home {
+      & #image-layout {
+        margin-top: 2%;
+        height: 40%;
+        width: 22%;
+      }
+      & #person-name {
+        font-size: 40px;
+      }
+      
+
+      & #hire-btn {
+        padding: 1% 2%;
+        font-size: 25px;
+      }
+      & #social-links {
+        font-size: 30px;
+      }
+      & #scroll-animation{
+        margin-top: 0;
+        padding: 2% 1%;
+        width: 2%;
+        height: 1%;
+        & i{
+          font-size: 7px;
+        }
+      }
+      
+    }
+  }
+}

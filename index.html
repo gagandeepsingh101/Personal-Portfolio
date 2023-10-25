@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <nav id="navigation">
+      <h1 class="nav-heading" id="main-heading">
+        GS<i class="ri-checkbox-blank-fill"></i>
+      </h1>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <h1 class="nav-heading">GS <i class="ri-checkbox-blank-fill"></i></h1>
+        </li>
+        <li>
+          <a class="links" href="#home"><i class="ri-home-4-line"></i>home</a>
+        </li>
+        <li>
+          <a class="links" href="#about"
+            ><i class="ri-user-follow-line"></i>about us</a
+          >
+        </li>
+        <li>
+          <a class="links" href="#skill"><i class="ri-tools-fill"></i>skills</a>
+        </li>
+        <li>
+          <a class="links" href="#contact"
+            ><i class="ri-chat-1-line"></i>contact us</a
+          >
+        </li>
+        <li><p>© 2023 | GS Copyright</p></li>
+      </ul>
+    </nav>
+    <section id="scroll-area">
+      <!-- Home section -->
+      <section id="home">
+        <div id="image-layout">
+          <img id="person-png" src="/images/profile_photo.png" alt="" />
+          <div id="overlay"></div>
+        </div>
+        <h1 id="person-name">Gagandeep Singh</h1>
+        <div class="wrapper">
+          <div class="static-txt">I'm a</div>
+          <ul class="dynamic-txts">
+            <li><span>Frontend Engineer</span></li>
+            <li><span>Web Developer</span></li>
+            <li><span>Tech Enthusiast</span></li>
+          </ul>
+        </div>
+        <div id="social-links">
+          <a href="#" class="links"> <i class="ri-linkedin-fill"></i></a>
+          <a href="#" class="links"> <i class="ri-github-fill"></i></a>
+        </div>
+        <button id="hire-btn">hire me</button>
+        <div id="scroll-animation">
+          <i class="ri-circle-fill"></i>
+        </div>
+      </section>
+      <section id="about">About</section>
+      <section id="skill">Skill</section>
+      <section id="contact">Contact</section>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      module="type"
+      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+    ></script>
+  </body>
+</html>

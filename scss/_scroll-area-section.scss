@@ -1,0 +1,28 @@
+#scroll-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: fit-content;
+  width: 100%;
+  color: white;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #scroll-area {
+    top: 0;
+    right: 0;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #scroll-area {
+    width: 80%;
+  }
+}

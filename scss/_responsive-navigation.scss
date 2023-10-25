@@ -1,0 +1,48 @@
+@import "navigation-mobile";
+@import "colors";
+@media only screen and (min-width: 768px) {
+  body {
+    flex-direction: column;
+    overflow-x: hidden;
+
+  }
+  #navigation {
+    width: 30%;
+    height: 100vh;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    & #main-heading {
+      display: none;
+    }
+    & .nav-heading {
+      font-size: 60px;
+      & i {
+        margin-left: -10px;
+        font-size: 15px;
+      }
+    }
+    & .nav-toggle {
+      display: none;
+    }
+    & .nav-list {
+      padding: 2% 10%;
+      gap: 5%;
+      width: 100%;
+      @include translate-in-X(0%);
+      li:first-child {
+        margin-bottom: 50%;
+      }
+      li:last-child {
+        position: absolute;
+        bottom: 5%;
+        justify-self: end;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #navigation{
+    width: 20%;
+  }
+}
