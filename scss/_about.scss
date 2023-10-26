@@ -1,0 +1,183 @@
+@import "colors";
+
+#scroll-area {
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+
+    & #heading-text {
+      font-size: 30px;
+      letter-spacing: 5px;
+      text-transform: capitalize;
+      & span {
+        color: $warning-yellow;
+      }
+    }
+    & #basic-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5%;
+      padding: 0 5%;
+      & #image-layout {
+        margin-top: 10%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        width: 60%;
+        & #overlay {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          z-index: 96;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border: 20px solid $success-green;
+          filter: blur(10px);
+          -webkit-filter: blur(10px);
+        }
+        & #person-png {
+          z-index: 97;
+          height: 95%;
+          width: 95%;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+      }
+      #basic-info-text-area {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        line-height: 30px;
+        margin-top: 10%;
+        background-color: $dark-purple;
+        width: 90%;
+        padding: 10% 5%;
+        border-radius: 30px;
+        text-align: center;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        & #traingele-shape {
+          z-index: -1;
+          position: absolute;
+          top: -2%;
+          background-color: $dark-purple;
+          height: 20px;
+          width: 20px;
+          @include rotation(45deg);
+        }
+        & #download-cv {
+          background-color: $danger-red;
+          text-decoration: none;
+          padding: 5% 7%;
+          font-size: 20px;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+        }
+      }
+    }
+    & #education-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 5%;
+      width: 80%;
+      padding: 5% 2%;
+      border-radius: 30px;
+      background-color: $dark-purple;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      & h1 {
+        font-size: 30px;
+      }
+
+      & #timeline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0% 5%;
+        & #line {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 90%;
+          left: 5%;
+          border: 1px solid $danger-red;
+        }
+        & .sec {
+          position: relative;
+          width: 100%;
+          height: 50%;
+          padding: 5%;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          border-bottom: 2px solid $danger-red;
+          border-left: 2px solid $danger-red;
+          border-radius: 0px 0px 0px 20px;
+          -webkit-border-radius: 0px 0px 0px 20px;
+          -moz-border-radius: 0px 0px 0px 20px;
+          -ms-border-radius: 0px 0px 0px 20px;
+          -o-border-radius: 0px 0px 0px 20px;
+          & .icon {
+            background-color: $bg-color;
+            position: absolute;
+            left: -7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            border: 1px solid $danger-red;
+
+            & img {
+              height: fit-content;
+              width: fit-content;
+              height: 20px;
+              width: 20px;
+            }
+          }
+          & h2 {
+            font-size: 15px;
+          }
+          & p {
+            font-size: 12px;
+          }
+          & #time {
+            color: rgba(255, 255, 255, 0.525);
+          }
+        }
+      }
+    }
+  }
+}

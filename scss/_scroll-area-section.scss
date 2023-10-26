@@ -1,13 +1,12 @@
 #scroll-area {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   position: absolute;
   top: 10%;
   right: 0;
   height: fit-content;
   width: 100%;
+  height: fit-content;
   color: white;
 
   &::-webkit-scrollbar {

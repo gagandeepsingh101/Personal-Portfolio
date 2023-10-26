@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -38,6 +38,9 @@
           <a class="links" href="#skill"><i class="ri-tools-fill"></i>skills</a>
         </li>
         <li>
+          <a class="links" href="#project"><i class="ri-tools-fill"></i>Projects</a>
+        </li>
+        <li>
           <a class="links" href="#contact"
             ><i class="ri-chat-1-line"></i>contact us</a
           >
@@ -47,7 +50,7 @@
     </nav>
     <section id="scroll-area">
       <!-- Home section -->
-      <section id="home">
+      <section class="home">
         <div id="image-layout">
           <img id="person-png" src="images/profile_photo.png" alt="" />
           <div id="overlay"></div>
@@ -70,9 +73,59 @@
           <i class="ri-circle-fill"></i>
         </div>
       </section>
-      <section id="about">About</section>
-      <section id="skill">Skill</section>
-      <section id="contact">Contact</section>
+
+      <!-- About Section -->
+      <section class="about">
+        <h1 id="heading-text">About <span>Us</span></h1>
+        <div id="basic-info">
+          <div id="image-layout">
+            <img id="person-png" src="images/profile_photo.png" alt="" />
+            <div id="overlay"></div>
+          </div>
+          <div id="basic-info-text-area">
+            <div id="traingele-shape"></div>
+            <p id="text-area">
+              I'm Gagandeep Singh, an enthusiastic and aspiring web developer.
+              Eager to learn, I'm on a journey to master the art of web
+              development. I'm passionate about creating functional and visually
+              appealing websites.
+            </p>
+            <a href="#" id="download-cv">Download CV</a>
+          </div>
+        </div>
+        <div id="education-section">
+          <h1>Education</h1>
+          <div id="timeline">
+            <hr id="line" />
+            <div class="sec">
+              <div class="icon">
+                <img src="images/timeline-1.png" alt="" />
+              </div>
+              <h2>Almabetter Trainee</h2>
+              <p>
+                I'm currently joining the bootcamp of Full Stack Web Development from Almabetter
+                to enhance knowledge and deep dive into web development world.
+              </p>
+              <p id="time">July 2023 - Present</p>
+            </div>
+            <div class="sec">
+              <div class="icon">
+              <img src="images/timeline-3.png" alt="" />
+              </div>
+              <h2>BCA Degree</h2>
+              <p>
+                I'm complete BCA from Mgsu in which gain knowledge of basic
+                programming concept and DSA
+              </p>
+              <p id="time">2020 - 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill">Skill</section>
+      <section class="project">Project</section>
+      <section class="contact">Contact</section>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"

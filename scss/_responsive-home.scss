@@ -1,7 +1,7 @@
 @import "home";
 @media only screen and (min-width: 768px) {
   #scroll-area {
-    #home {
+    .home {
       gap: 4%;
       & #image-layout {
         height: 30%;
@@ -21,7 +21,7 @@
 }
 @media only screen and (min-width: 1024px) {
   #scroll-area {
-    #home {
+    .home {
       & #image-layout {
         margin-top: 2%;
         height: 40%;
@@ -30,8 +30,6 @@
       & #person-name {
         font-size: 40px;
       }
-      
-
       & #hire-btn {
         padding: 1% 2%;
         font-size: 25px;
@@ -47,8 +45,7 @@
         & i{
           font-size: 7px;
         }
-      }
-      
+      }      
     }
   }
 }

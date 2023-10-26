@@ -8,6 +8,8 @@ navToggle.on("click", function () {
   navToggle.toggleClass("active");
 });
 
+
+  
 // Typewriter text
 
 

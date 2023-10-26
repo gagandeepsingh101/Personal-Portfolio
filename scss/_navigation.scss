@@ -25,6 +25,8 @@
 #navigation {
   z-index: 99;
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -86,7 +88,6 @@
     list-style: none;
     flex-direction: column;
     gap: 30px;
-    border-right: 2px solid $white-color;
     @include ease-transition();
     @include translate-in-X(-100%);
     & li:first-child{

@@ -20,6 +20,8 @@ body {
 #navigation {
   z-index: 99;
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -102,7 +104,6 @@ body {
   list-style: none;
   flex-direction: column;
   gap: 30px;
-  border-right: 2px solid #fefefe;
   transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -190,17 +191,19 @@ body {
   #navigation {
     width: 20%;
   }
+  #navigation .nav-list .nav-heading {
+    margin-bottom: -15%;
+  }
 }
 #scroll-area {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   position: absolute;
   top: 10%;
   right: 0;
   height: fit-content;
   width: 100%;
+  height: fit-content;
   color: white;
 }
 #scroll-area::-webkit-scrollbar {
@@ -219,7 +222,7 @@ body {
     width: 80%;
   }
 }
-#scroll-area #home {
+#scroll-area .home {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -227,7 +230,7 @@ body {
   height: 100vh;
   width: 100%;
 }
-#scroll-area #home #image-layout {
+#scroll-area .home #image-layout {
   margin-top: 10%;
   position: relative;
   display: flex;
@@ -236,7 +239,7 @@ body {
   height: 30%;
   width: 60%;
 }
-#scroll-area #home #image-layout #overlay {
+#scroll-area .home #image-layout #overlay {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -250,7 +253,7 @@ body {
   filter: blur(10px);
   -webkit-filter: blur(10px);
 }
-#scroll-area #home #image-layout #person-png {
+#scroll-area .home #image-layout #person-png {
   z-index: 97;
   height: 95%;
   width: 95%;
@@ -260,26 +263,26 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#scroll-area #home #person-name {
+#scroll-area .home #person-name {
   font-size: 30px;
 }
-#scroll-area #home .wrapper {
+#scroll-area .home .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#scroll-area #home .wrapper .static-txt {
+#scroll-area .home .wrapper .static-txt {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
-#scroll-area #home .wrapper .dynamic-txts {
+#scroll-area .home .wrapper .dynamic-txts {
   margin-left: 5px;
   height: 30px;
   line-height: 30px;
   overflow: hidden;
 }
-#scroll-area #home .dynamic-txts li {
+#scroll-area .home .dynamic-txts li {
   list-style: none;
   color: #FFD15C;
   font-size: 20px;
@@ -289,13 +292,13 @@ body {
   animation: slide 15s steps(3) infinite;
   -webkit-animation: slide 15s steps(3) infinite;
 }
-#scroll-area #home .dynamic-txts li span {
+#scroll-area .home .dynamic-txts li span {
   color: #F44B5F;
   position: relative;
   margin: 5px 0;
   line-height: 30px;
 }
-#scroll-area #home .dynamic-txts li span::after {
+#scroll-area .home .dynamic-txts li span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -306,7 +309,7 @@ body {
   animation: typing 5s steps(20) infinite, blink step-start 0.5s infinite alternate;
   -webkit-animation: typing 5s steps(20) infinite, blink step-start 0.5s infinite alternate;
 }
-#scroll-area #home #hire-btn {
+#scroll-area .home #hire-btn {
   padding: 2% 5%;
   border: none;
   border-radius: 50px;
@@ -318,19 +321,19 @@ body {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
-#scroll-area #home #hire-btn:hover {
+#scroll-area .home #hire-btn:hover {
   animation: heart-animation 1s ease-in-out;
   -webkit-animation: heart-animation 1s ease-in-out;
 }
-#scroll-area #home #social-links {
+#scroll-area .home #social-links {
   font-size: 20px;
   display: flex;
   gap: 10%;
 }
-#scroll-area #home #social-links .links {
+#scroll-area .home #social-links .links {
   text-decoration: none;
 }
-#scroll-area #home #social-links :hover {
+#scroll-area .home #social-links :hover {
   color: #FFD15C;
   transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
@@ -338,12 +341,13 @@ body {
   -ms-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
 }
-#scroll-area #home #scroll-animation {
+#scroll-area .home #scroll-animation {
   cursor: pointer;
   position: relative;
-  padding: 1% 2%;
-  height: 4%;
-  width: 4%;
+  margin-top: 15%;
+  padding: 2% 3%;
+  height: 6%;
+  width: 3%;
   border: 2px solid #fefefe;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -351,7 +355,7 @@ body {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-#scroll-area #home #scroll-animation i {
+#scroll-area .home #scroll-animation i {
   transform: translate(-50%, -50%);
   position: absolute;
   font-size: 5px;
@@ -361,8 +365,8 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  animation: scroll-animation 1s ease-in-out infinite;
-  -webkit-animation: scroll-animation 1s ease-in-out infinite;
+  animation: scroll-animation 2s ease-in-out infinite;
+  -webkit-animation: scroll-animation 2s ease-in-out infinite;
 }
 @keyframes scroll-animation {
   0% {
@@ -406,46 +410,309 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  #scroll-area #home {
+  #scroll-area .home {
     gap: 4%;
   }
-  #scroll-area #home #image-layout {
+  #scroll-area .home #image-layout {
     height: 30%;
     width: 35%;
   }
-  #scroll-area #home #scroll-animation {
+  #scroll-area .home #scroll-animation {
     margin-top: 5%;
     padding: 4% 2%;
     width: 2%;
     height: 4%;
   }
-  #scroll-area #home #scroll-animation i {
+  #scroll-area .home #scroll-animation i {
     font-size: 5px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  #scroll-area #home #image-layout {
+  #scroll-area .home #image-layout {
     margin-top: 2%;
     height: 40%;
     width: 22%;
   }
-  #scroll-area #home #person-name {
+  #scroll-area .home #person-name {
     font-size: 40px;
   }
-  #scroll-area #home #hire-btn {
+  #scroll-area .home #hire-btn {
     padding: 1% 2%;
     font-size: 25px;
   }
-  #scroll-area #home #social-links {
+  #scroll-area .home #social-links {
     font-size: 30px;
   }
-  #scroll-area #home #scroll-animation {
+  #scroll-area .home #scroll-animation {
     margin-top: 0;
     padding: 2% 1%;
     width: 2%;
     height: 1%;
   }
-  #scroll-area #home #scroll-animation i {
+  #scroll-area .home #scroll-animation i {
     font-size: 7px;
+  }
+}
+#scroll-area .about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+}
+#scroll-area .about #heading-text {
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+}
+#scroll-area .about #heading-text span {
+  color: #FFD15C;
+}
+#scroll-area .about #basic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  padding: 0 5%;
+}
+#scroll-area .about #basic-info #image-layout {
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 60%;
+}
+#scroll-area .about #basic-info #image-layout #overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 96;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 20px solid #44D7B6;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+#scroll-area .about #basic-info #image-layout #person-png {
+  z-index: 97;
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#scroll-area .about #basic-info #basic-info-text-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  line-height: 30px;
+  margin-top: 10%;
+  background-color: #302F4E;
+  width: 90%;
+  padding: 10% 5%;
+  border-radius: 30px;
+  text-align: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#scroll-area .about #basic-info #basic-info-text-area #traingele-shape {
+  z-index: -1;
+  position: absolute;
+  top: -2%;
+  background-color: #302F4E;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+#scroll-area .about #basic-info #basic-info-text-area #download-cv {
+  background-color: #F44B5F;
+  text-decoration: none;
+  padding: 5% 7%;
+  font-size: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#scroll-area .about #education-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 80%;
+  padding: 5% 2%;
+  border-radius: 30px;
+  background-color: #302F4E;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#scroll-area .about #education-section h1 {
+  font-size: 30px;
+}
+#scroll-area .about #education-section #timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0% 5%;
+}
+#scroll-area .about #education-section #timeline #line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90%;
+  left: 5%;
+  border: 1px solid #F44B5F;
+}
+#scroll-area .about #education-section #timeline .sec {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  padding: 5%;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid #F44B5F;
+  border-left: 2px solid #F44B5F;
+  border-radius: 0px 0px 0px 20px;
+  -webkit-border-radius: 0px 0px 0px 20px;
+  -moz-border-radius: 0px 0px 0px 20px;
+  -ms-border-radius: 0px 0px 0px 20px;
+  -o-border-radius: 0px 0px 0px 20px;
+}
+#scroll-area .about #education-section #timeline .sec .icon {
+  background-color: #353353;
+  position: absolute;
+  left: -7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: 1px solid #F44B5F;
+}
+#scroll-area .about #education-section #timeline .sec .icon img {
+  height: fit-content;
+  width: fit-content;
+  height: 20px;
+  width: 20px;
+}
+#scroll-area .about #education-section #timeline .sec h2 {
+  font-size: 15px;
+}
+#scroll-area .about #education-section #timeline .sec p {
+  font-size: 12px;
+}
+#scroll-area .about #education-section #timeline .sec #time {
+  color: rgba(255, 255, 255, 0.525);
+}
+
+@media only screen and (min-width: 760px) {
+  #scroll-area .about #education-section #timeline .sec .icon {
+    left: -6%;
+    width: 40px;
+    height: 40px;
+  }
+  #scroll-area .about #education-section #timeline .sec .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  #scroll-area .about #education-section #timeline .sec p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 2%;
+  }
+  #scroll-area .about #education-section #timeline .sec h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4%;
+  }
+  #scroll-area .about #education-section #timeline .sec #time {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #scroll-area .about {
+    margin-top: 10%;
+    gap: 1%;
+  }
+  #scroll-area .about #heading-text {
+    font-size: 60px;
+  }
+  #scroll-area .about #basic-info {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 10%;
+  }
+  #scroll-area .about #basic-info #image-layout {
+    height: 42%;
+    width: 15%;
+  }
+  #scroll-area .about #basic-info #basic-info-text-area {
+    padding: 3% 2%;
+  }
+  #scroll-area .about #basic-info #basic-info-text-area #text-area {
+    font-size: 20px;
+  }
+  #scroll-area .about #basic-info #basic-info-text-area #traingele-shape {
+    left: -1%;
+    top: 20%;
+  }
+  #scroll-area .about #basic-info #basic-info-text-area #download-cv {
+    padding: 1% 3%;
+  }
+  #scroll-area .about #education-section {
+    padding-top: 1%;
+  }
+  #scroll-area .about #education-section h1 {
+    font-size: 50px;
+  }
+  #scroll-area .about #education-section #timeline .sec .icon {
+    width: 50px;
+    height: 50px;
+    left: -3%;
+  }
+  #scroll-area .about #education-section #timeline .sec .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  #scroll-area .about #education-section #timeline .sec p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 2%;
+  }
+  #scroll-area .about #education-section #timeline .sec h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 4%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,103 @@
+@import "about";
+
+@media only screen and (min-width: 760px) {
+  #scroll-area {
+    & .about {
+      & #education-section {
+        & #timeline {
+          & .sec {
+            & .icon {
+              left: -6%;
+              width: 40px;
+              height: 40px;
+              & img {
+                width: 30px;
+                height: 30px;
+              }
+            }
+            & p {
+              font-size: 15px;
+              font-weight: 200;
+              margin-bottom: 2%;
+            }
+            & h2 {
+              font-size: 20px;
+              font-weight: 500;
+              margin-bottom: 4%;
+            }
+            & #time {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  #scroll-area {
+    & .about {
+      margin-top: 10%;
+      gap: 1%;
+      & #heading-text {
+        font-size: 60px;
+      }
+      & #basic-info {
+        margin-top: -50px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 10%;
+
+        & #image-layout {
+          height: 42%;
+          width: 15%;
+        }
+        & #basic-info-text-area {
+          padding: 3% 2%;
+          & #text-area {
+            font-size: 20px;
+          }
+          & #traingele-shape {
+            left: -1%;
+            top: 20%;
+          }
+          & #download-cv {
+            padding: 1% 3%;
+          }
+        }
+      }
+      & #education-section {
+        padding-top: 1%;
+        h1 {
+          font-size: 50px;
+        }
+        & #timeline {
+          & .sec {
+            & .icon {
+              width: 50px;
+              height: 50px;
+              left: -3%;
+              & img {
+                width: 40px;
+                height: 40px;
+              }
+            }
+            & p {
+              font-size: 20px;
+              font-weight: 200;
+              margin-bottom: 2%;
+            }
+            & h2 {
+              font-size: 30px;
+              font-weight: 500;
+              margin-bottom: 4%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
