@@ -1,0 +1,73 @@
+@import "skill";
+
+@media only screen and (min-width: 768px) {
+  .skill {
+    margin-top: 100px;
+    & #heading-text {
+      font-size: 40px;
+    }
+    & #skill-images {
+      margin-top: 10%;
+      width: 80%;
+      column-gap: 30%;
+      & .images {
+        width: 120px;
+        height: 120px;
+        margin: 30px 0;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+        & .img-bg {
+          width: 120px;
+          height: 120px;
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+        }
+        & img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .skill {
+    & #heading-text {
+      font-size: 50px;
+    }
+    & #skill-images {
+        margin-top: 5%;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20%;
+      & .images {
+        width: 170px;
+        height: 170px;
+        margin: 30px 0;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+        & .img-bg {
+          width: 170px;
+          height: 170px;
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+        }
+        & img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}
