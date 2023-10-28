@@ -1,0 +1,60 @@
+@import "project";
+
+@media only screen and (min-width: 768px) {
+  .project {
+    #heading-text {
+      font-size: 40px;
+    }
+    & .project-detail {
+      grid-template-columns: repeat(1, 400px);
+      grid-template-rows: repeat(6, 250px);
+      & .project-sec {
+        & .overlay {
+          gap: 10%;
+          & h4{
+            font-size: 25px;
+          }
+          & p{
+            font-size: 20px;
+          }
+          & .btn {
+            width: 80%;
+            & a {
+              & i {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .project {
+    margin: 0 0 15% 0;
+    #heading-text {
+      font-size: 50px;
+      margin-bottom: 2%;
+    }
+    & .project-detail {
+      grid-template-columns: repeat(2, 500px);
+      grid-template-rows: repeat(3, 300px);
+      row-gap: 10%;
+      column-gap: 10%;
+      padding: 0;
+      & .project-sec {
+        & .overlay {
+          gap: 10%;
+          & .btn {
+            width: 50%;
+            a {
+              font-size: 20px;
+              padding: 7% 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -45,29 +45,6 @@
         margin-top: 5%;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 20%;
-      & .images {
-        width: 170px;
-        height: 170px;
-        margin: 30px 0;
-        border-radius: 16px;
-        -webkit-border-radius: 16px;
-        -moz-border-radius: 16px;
-        -ms-border-radius: 16px;
-        -o-border-radius: 16px;
-        & .img-bg {
-          width: 170px;
-          height: 170px;
-          border-radius: 20px;
-          -webkit-border-radius: 20px;
-          -moz-border-radius: 20px;
-          -ms-border-radius: 20px;
-          -o-border-radius: 20px;
-        }
-        & img {
-          width: 120px;
-          height: 120px;
-        }
-      }
     }
   }
 }
