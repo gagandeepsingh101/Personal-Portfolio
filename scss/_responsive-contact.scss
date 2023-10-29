@@ -1,0 +1,53 @@
+@import "contact";
+@media only screen and (min-width: 768px) {
+  .contact {
+    margin-top: 20%;
+    & #heading-text{
+        font-size: 50px;
+    }
+    & #main-area {
+      & #contact-text {
+        gap: 20%;
+        height: 40vh;
+        & h1 {
+            width: 90%;
+          font-size: 30px;
+        }
+        & p{
+            width: 90%;
+            font-size: 25px;
+        }
+      }
+      & .form-sec {
+        & form{
+            & button{
+                width: 40% ;
+            }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact{
+    #main-area{
+      margin-top: 5%;
+      display: flex;
+      align-items: start;
+      & #contact-text{
+        width: 45%;
+        gap: 10%;
+      }
+      & .form-sec{
+        width: 55%;
+        margin-top: 0;
+         & form{
+          & button{
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
