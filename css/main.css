@@ -132,10 +132,7 @@ body {
 #navigation .nav-list li a i {
   color: #FFD15C;
 }
-#navigation .nav-list li a:hover {
-  color: #FFD15C;
-}
-#navigation .nav-list li a .nav-current {
+#navigation .nav-list li a:hover, #navigation .nav-list li .nav-active {
   color: #FFD15C;
 }
 #navigation .show-nav {
@@ -288,7 +285,7 @@ body {
 #scroll-area .home .dynamic-txts li {
   list-style: none;
   color: #FFD15C;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -309,8 +306,8 @@ body {
   width: 100%;
   background: #353353;
   border-left: 2px solid #FFD15C;
-  animation: typing 5s steps(20) infinite, blink step-start 0.5s infinite alternate;
-  -webkit-animation: typing 5s steps(20) infinite, blink step-start 0.5s infinite alternate;
+  animation: typing 5s steps(30) infinite, blink step-start 0.5s infinite alternate;
+  -webkit-animation: typing 5s steps(30) infinite, blink step-start 0.5s infinite alternate;
 }
 #scroll-area .home #hire-btn {
   padding: 2% 5%;

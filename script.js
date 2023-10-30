@@ -36,9 +36,9 @@ $(document).ready(function () {
       scrollPos >= currentSecTopPos &&
       scrollPos < currentSecTopPos + currentSecHeight
     ) {
-      $(`.${currentSec}-link`).css("color", "#FFD15C");
+      $(`.${currentSec}-link`).addClass("nav-active");
     } else {
-      $(`.${currentSec}-link`).css("color", "white");
+      $(`.${currentSec}-link`).removeClass("nav-active");
     }
   }
 

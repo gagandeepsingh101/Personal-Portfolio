@@ -63,7 +63,7 @@
     .dynamic-txts li {
       list-style: none;
       color: $warning-yellow;
-      font-size: 20px;
+      font-size: 21px;
       font-weight: 500;
       position: relative;
       top: 0;
@@ -85,8 +85,8 @@
       width: 100%;
       background: $bg-color;
       border-left: 2px solid $warning-yellow;
-      animation: typing 5s steps(20) infinite,      blink step-start 0.5s infinite alternate;
-      -webkit-animation: typing 5s steps(20) infinite,      blink step-start 0.5s infinite alternate;
+      animation: typing 5s steps(30) infinite,      blink step-start 0.5s infinite alternate;
+      -webkit-animation: typing 5s steps(30) infinite,      blink step-start 0.5s infinite alternate;
 }
 
     & #hire-btn {

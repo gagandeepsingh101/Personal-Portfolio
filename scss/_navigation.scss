@@ -107,12 +107,9 @@
         i{
           color:$warning-yellow;
         }
-        &:hover{
-          color:$warning-yellow;
-        }
-        & .nav-current {
-          color:$warning-yellow;;
-        }
+      }
+      & a:hover, .nav-active{
+        color:$warning-yellow;
       }
     }
   }
