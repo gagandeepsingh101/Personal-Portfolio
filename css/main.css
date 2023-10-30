@@ -543,32 +543,6 @@ body {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
-#scroll-area .about #basic-info #basic-info-text-area #download-cv {
-  background-color: #F44B5F;
-  text-decoration: none;
-  padding: 5% 7%;
-  font-size: 20px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-#scroll-area .about #basic-info #basic-info-text-area #download-cv:hover {
-  animation: heart-animation 1s ease-in-out;
-  -webkit-animation: heart-animation 1s ease-in-out;
-}
-@keyframes heart-animation {
-  0% {
-    scale: 1;
-  }
-  50% {
-    scale: 0.9;
-  }
-  100% {
-    scale: 1;
-  }
-}
 #scroll-area .about #education-section {
   display: flex;
   align-items: center;
