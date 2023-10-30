@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- icon cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- animation on scroll cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <nav id="navigation">
+
+    <!-- navigation section -->
+    <nav id="navigation" data-aos="zoom-out-right" data-aos-duration="1000">
       <h1 class="nav-heading" id="main-heading">
         GS<i class="ri-checkbox-blank-fill"></i>
       </h1>
@@ -55,9 +62,10 @@
       </ul>
     </nav>
     <section id="scroll-area">
+
       <!-- Home section -->
       <section class="home">
-        <div id="image-layout">
+        <div id="image-layout" data-aos="zoom-in" data-aos-duration="2000">
           <img id="person-png" src="images/profile_photo.png" alt="" />
           <div id="overlay"></div>
         </div>
@@ -74,17 +82,21 @@
           <a href="#" class="links"> <i class="ri-linkedin-fill"></i></a>
           <a href="#" class="links"> <i class="ri-github-fill"></i></a>
         </div>
-        <button id="hire-btn">hire me</button>
-        <div id="scroll-animation">
+        <button id="hire-btn" data-aos="zoom-in" data-aos-duration="2000">
+          hire me
+        </button>
+        <div id="scroll-animation" data-aos="fade-up" data-aos-duration="1000">
           <i class="ri-circle-fill"></i>
         </div>
       </section>
 
       <!-- About Section -->
       <section class="about">
-        <h1 id="heading-text">About <span>Us</span></h1>
+        <h1 id="heading-text" data-aos="fade-right" data-aos-duration="1000">
+          About <span>Us</span>
+        </h1>
         <div id="basic-info">
-          <div id="image-layout">
+          <div id="image-layout" data-aos="zoom-in" data-aos-duration="1000">
             <img id="person-png" src="images/profile_photo.png" alt="" />
             <div id="overlay"></div>
           </div>
@@ -96,14 +108,20 @@
               development. I'm passionate about creating functional and visually
               appealing websites.
             </p>
-            <a href="#" id="download-cv">Download CV</a>
+            <a
+              href="#"
+              id="download-cv"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              >Download CV</a
+            >
           </div>
         </div>
         <div id="education-section">
-          <h1>Education</h1>
+          <h1 data-aos="zoom-in" data-aos-duration="1000">Education</h1>
           <div id="timeline">
             <hr id="line" />
-            <div class="sec">
+            <div class="sec" data-aos="fade-up" data-aos-duration="1000">
               <div class="icon">
                 <img src="images/timeline-1.png" alt="" />
               </div>
@@ -115,7 +133,7 @@
               </p>
               <p id="time">July 2023 - Present</p>
             </div>
-            <div class="sec">
+            <div class="sec" data-aos="fade-up" data-aos-duration="1000">
               <div class="icon">
                 <img src="images/timeline-3.png" alt="" />
               </div>
@@ -126,23 +144,25 @@
               </p>
               <p id="time">2020 - 2023</p>
             </div>
-            <div class="sec">
+            <div class="sec" data-aos="fade-up" data-aos-duration="1000">
               <div class="icon">
                 <img src="images/timeline-2.png" alt="" />
               </div>
               <h2>12<sup>th</sup> Class</h2>
               <p>
-                Complete class 12<sup>th</sup> with PCM secured 79% from Guru HarKrishan Sr. Sec. Public School
+                Complete class 12<sup>th</sup> with PCM secured 79% from Guru
+                HarKrishan Sr. Sec. Public School
               </p>
               <p id="time">2018 - 2020</p>
             </div>
-            <div class="sec">
+            <div class="sec" data-aos="fade-up" data-aos-duration="1000">
               <div class="icon">
                 <img src="images/timeline-2.png" alt="" />
               </div>
-              <h2>10<sup>th</sup> Class </h2>
+              <h2>10<sup>th</sup> Class</h2>
               <p>
-                Complete class 10<sup>th</sup> secured 80% from Guru HarKrishan Sr. Sec. Public School
+                Complete class 10<sup>th</sup> secured 80% from Guru HarKrishan
+                Sr. Sec. Public School
               </p>
               <p id="time">2016-2018</p>
             </div>
@@ -152,46 +172,94 @@
 
       <!-- My Skill Set -->
       <section class="skill">
-        <h1 id="heading-text"><span>My</span> Skill Set</h1>
+        <h1 id="heading-text" data-aos="fade-right" data-aos-duration="1000">
+          <span>My</span> Skill Set
+        </h1>
         <div id="skill-images">
           <div class="images">
-            <img src="images/html.svg" alt="" />
+            <img src="images/html.svg" alt="" / data-aos="zoom-in"
+            data-aos-duration="1000">
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/css.svg" alt="" />
+            <img
+              src="images/css.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/js.svg" alt="" />
+            <img
+              src="images/js.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/jquery.svg" alt="" />
+            <img
+              src="images/jquery.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/git.svg" alt="" />
+            <img
+              src="images/git.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/github.svg" alt="" />
+            <img
+              src="images/github.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/tailwind.svg" alt="" />
+            <img
+              src="images/tailwind.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/scss.svg" alt="" />
+            <img
+              src="images/scss.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/boostrap.svg" alt="" />
+            <img
+              src="images/boostrap.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
           <div class="images">
-            <img src="images/vscode.svg" alt="" />
+            <img
+              src="images/vscode.svg"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
             <div class="img-bg"></div>
           </div>
         </div>
@@ -199,9 +267,15 @@
 
       <!-- Project Section -->
       <section class="project">
-        <h1 id="heading-text">Project <span>Showcase</span></h1>
+        <h1 id="heading-text" data-aos="fade-right" data-aos-duration="1000">
+          Project <span>Showcase</span>
+        </h1>
         <div class="project-detail">
-          <div class="project-sec">
+          <div
+            class="project-sec"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             <img src="images/project-6.png" alt="" />
             <div class="overlay">
               <h4>Personal Portfolio</h4>
@@ -221,7 +295,11 @@
               </div>
             </div>
           </div>
-          <div class="project-sec">
+          <div
+            class="project-sec"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <img src="images/project-5.png" alt="" />
             <div class="overlay">
               <h4>iNNOVATEtECH Page</h4>
@@ -240,7 +318,11 @@
               </div>
             </div>
           </div>
-          <div class="project-sec">
+          <div
+            class="project-sec"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <img src="images/project-4.png" alt="" />
             <div class="overlay">
               <h4>CozyCasa Page</h4>
@@ -256,7 +338,11 @@
               </div>
             </div>
           </div>
-          <div class="project-sec">
+          <div
+            class="project-sec"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             <img src="images/project-3.png" alt="" />
             <div class="overlay">
               <h4>Weather App</h4>
@@ -271,7 +357,11 @@
               </div>
             </div>
           </div>
-          <div class="project-sec">
+          <div
+            class="project-sec"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <img src="images/project-2.png" alt="" />
             <div class="overlay">
               <h4>To Do List</h4>
@@ -286,7 +376,11 @@
               </div>
             </div>
           </div>
-          <div class="project-sec">
+          <div
+            class="project-sec"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             <img src="images/project-1.png" alt="" />
             <div class="overlay">
               <h4>FurniShop Page</h4>
@@ -310,21 +404,39 @@
 
       <!-- Contact Section -->
       <section class="contact">
-        <h1 id="heading-text">Get in <span>Touch</span></h1>
+        <h1 id="heading-text" data-aos="fade-right" data-aos-duration="1000">
+          Get in <span>Touch</span>
+        </h1>
         <div id="main-area">
-          <div id="contact-text">
+          <div id="contact-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>Let's talk about everything!</h1>
             <p>
               Don't like forms? Send me an
-              <a target="_blank" rel="nofollow" href="mailto:gagandeepsingh128548@gmail.com">mail</a>
+              <a
+                target="_blank"
+                rel="nofollow"
+                href="mailto:gagandeepsingh128548@gmail.com"
+                >mail</a
+              >
             </p>
           </div>
-          <div class="form-sec">
+          <div class="form-sec" data-aos="zoom-in" data-aos-duration="1000">
             <form>
-              <input type="text" name="" id="name" placeholder="Your Name">
-              <input type="email" name="" id="email-address" placeholder="Email Address">
-              <input type="text" name="" id="subject" placeholder="Subject">
-              <textarea name="" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+              <input type="text" name="" id="name" placeholder="Your Name" />
+              <input
+                type="email"
+                name=""
+                id="email-address"
+                placeholder="Email Address"
+              />
+              <input type="text" name="" id="subject" placeholder="Subject" />
+              <textarea
+                name=""
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
               <button id="submit">Send Message</button>
               <p class="response">hi</p>
             </form>
@@ -332,13 +444,18 @@
         </div>
       </section>
     </section>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>    
+
+    <!-- using smtp for email sending -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- used to add scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- use jquery in js -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>

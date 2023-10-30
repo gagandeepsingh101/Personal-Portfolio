@@ -145,5 +145,5 @@ function visibleMessage(message, res) {
   }, 1000);
 }
 
-
-// 
+// Animate section on scroll
+AOS.init();

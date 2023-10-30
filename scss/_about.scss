@@ -92,7 +92,24 @@
           -moz-border-radius: 30px;
           -ms-border-radius: 30px;
           -o-border-radius: 30px;
+          &:hover{
+            animation: heart-animation 1s ease-in-out;
+            -webkit-animation: heart-animation 1s ease-in-out;
+          }
         }
+        
+        @keyframes heart-animation {
+          0% {
+            scale: 1;
+          }
+          50% {
+            scale: 0.9;
+          }
+          100% {
+            scale: 1;
+          }
+        }
+    
       }
     }
     & #education-section {

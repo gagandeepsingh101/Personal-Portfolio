@@ -135,6 +135,9 @@ body {
 #navigation .nav-list li a:hover {
   color: #FFD15C;
 }
+#navigation .nav-list li a .nav-current {
+  color: #FFD15C;
+}
 #navigation .show-nav {
   transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -550,6 +553,21 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+#scroll-area .about #basic-info #basic-info-text-area #download-cv:hover {
+  animation: heart-animation 1s ease-in-out;
+  -webkit-animation: heart-animation 1s ease-in-out;
+}
+@keyframes heart-animation {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
 }
 #scroll-area .about #education-section {
   display: flex;
@@ -1096,6 +1114,21 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+.contact #main-area .form-sec form button:hover {
+  animation: heart-animation 1s ease-in-out;
+  -webkit-animation: heart-animation 1s ease-in-out;
+}
+@keyframes heart-animation {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .contact #main-area .form-sec form .response {
   margin-top: -2%;
