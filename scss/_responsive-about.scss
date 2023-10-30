@@ -6,6 +6,7 @@
       & #education-section {
         & #timeline {
           & .sec {
+            gap: 1%;
             & .icon {
               left: -6%;
               width: 40px;
@@ -16,6 +17,7 @@
               }
             }
             & p {
+              line-height: 30px;
               font-size: 15px;
               font-weight: 200;
               margin-bottom: 2%;

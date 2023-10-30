@@ -107,9 +107,12 @@
         i{
           color:$warning-yellow;
         }
-      }
-      & a:hover{
-        color:$warning-yellow;
+        &:hover{
+          color:$warning-yellow;
+        }
+        & .nav-current {
+          color:$warning-yellow;;
+        }
       }
     }
   }

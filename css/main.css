@@ -587,13 +587,13 @@ body {
 #scroll-area .about #education-section #timeline .sec {
   position: relative;
   width: 100%;
-  height: 50%;
   padding: 5%;
   line-height: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  text-align: center;
   border-bottom: 2px solid #F44B5F;
   border-left: 2px solid #F44B5F;
   border-radius: 0px 0px 0px 20px;
@@ -635,6 +635,9 @@ body {
 }
 
 @media only screen and (min-width: 760px) {
+  #scroll-area .about #education-section #timeline .sec {
+    gap: 1%;
+  }
   #scroll-area .about #education-section #timeline .sec .icon {
     left: -6%;
     width: 40px;
@@ -645,6 +648,7 @@ body {
     height: 30px;
   }
   #scroll-area .about #education-section #timeline .sec p {
+    line-height: 30px;
     font-size: 15px;
     font-weight: 200;
     margin-bottom: 2%;
@@ -881,7 +885,6 @@ body {
   height: 100%;
 }
 .project .project-detail .project-sec .overlay {
-  opacity: 0;
   padding: 5%;
   position: absolute;
   background-color: rgba(48, 47, 78, 0.8862745098);
@@ -947,7 +950,6 @@ body {
   color: #353353;
 }
 .project .project-detail .project-sec:hover .overlay {
-  opacity: 1;
   transform: translateY(0%);
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -1014,7 +1016,7 @@ body {
   text-align: center;
 }
 .contact #heading-text span {
-  color: #F44B5F;
+  color: #FFD15C;
 }
 .contact #main-area {
   padding: 1%;
@@ -1122,10 +1124,12 @@ body {
 
 @media only screen and (min-width: 768px) {
   .contact {
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .contact #heading-text {
     font-size: 50px;
+    width: 100%;
+    padding-right: 10%;
   }
   .contact #main-area #contact-text {
     gap: 20%;
