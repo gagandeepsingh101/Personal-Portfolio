@@ -82,6 +82,33 @@
           width: 20px;
           @include rotation(45deg);
         }
+        & #download-cv {
+          display: none;
+          background-color: $danger-red;
+          text-decoration: none;
+          padding: 5% 7%;
+          font-size: 20px;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+          &:hover {
+            animation: heart-animation 1s ease-in-out;
+            -webkit-animation: heart-animation 1s ease-in-out;
+          }
+        }
+        @keyframes heart-animation {
+          0% {
+            scale: 1;
+          }
+          50% {
+            scale: 0.9;
+          }
+          100% {
+            scale: 1;
+          }
+        }
       }
     }
     & #education-section {
@@ -89,7 +116,7 @@
       align-items: center;
       flex-direction: column;
       margin-top: 5%;
-      width: 80%;
+      width: 90%;
       padding: 5% 2%;
       border-radius: 30px;
       background-color: $dark-purple;
